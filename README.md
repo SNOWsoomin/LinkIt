@@ -10,6 +10,19 @@
 - 기업 내지는 프리랜서까지도, **명함을 사용해야 하는 모든 사람이** 편하게 사용할 수 있는 디지털 명함 서비스 제공
 - REST api를 기반으로 한 데이터 제공과 React 기반의 사용자 인터페이스 제공
 
+## 1-3. 기능 요구사항
+- **Google OAuth 2.0**을 통한 소셜 로그인/로그아웃
+- 사용자는 이름, 회사명, 연락처 등의 필수 정보를 입력하여 디지털 명함을 제작
+- 생성된 명함은 공유 링크를 통해 QR코드로 공유하거나 PNG로 공유
+- 명함첩 중복 저장 예외 처리
+
+## 1-4. 비기능 요구사항
+- React를 통한 **모바일 환경 및 데스크톱 환경 사용**
+- 지연 없이 신속한 데이터 교환
+
+## 1-5. 유스케이스
+![image](https://blog.kakaocdn.net/dna/cEzRtO/dJMcaaLChMH/AAAAAAAAAAAAAAAAAAAAAI-iS9-4uWB1BZVtDkgQzNlngVUIfe3JomQZWXY1bKIV/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1777561199&allow_ip=&allow_referer=&signature=MwJ4%2B9Z5CxQ40wbYmmVWWu6zKqs%3D)
+
 # 2. 설계
 ## 2-1. 시스템 아키텍쳐
 - Frontend : React
@@ -23,8 +36,8 @@
 - [x] 명함 교환
 - [x] 교환받은 명함 확인
 
-## 2-3. usecase
-![image](https://blog.kakaocdn.net/dna/cEzRtO/dJMcaaLChMH/AAAAAAAAAAAAAAAAAAAAAI-iS9-4uWB1BZVtDkgQzNlngVUIfe3JomQZWXY1bKIV/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1777561199&allow_ip=&allow_referer=&signature=MwJ4%2B9Z5CxQ40wbYmmVWWu6zKqs%3D)
+## 2-3. 데이터베이스 설계 (ERD)  
+![image](https://blog.kakaocdn.net/dna/diqlbO/dJMcacJr1nG/AAAAAAAAAAAAAAAAAAAAAKIxQLdpLmHVdf3IfbifvNq0jXYf7oDqUCB7Eq_gqXvH/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1777561199&allow_ip=&allow_referer=&signature=ltddqM4LtUUwb2%2F7hW0W%2FoBR6S0%3D)
 
 # 3. 테스트 시나리오
 원활한 테스트를 위해 구글 계정 2개를 필요로 한다.
@@ -115,9 +128,9 @@
 
 ## 5. 결론
 ### 작업 결과
-- QR코드 및 PNG 저장 기능으로 온라인/오프라인 및 서비스 가입 여부에 제한 없이 어디에서도 사용할 수 있는 환경 구축
-- 교환된 명함을 탭을 닫는 것만으로 사라지게 하지 않고, 명함첩에 저장하여 보관 및 관리에 편의성
-- React와 Java(Spring Boots) 사이의 데이터 통신 구조에 대한 학습
+- **QR코드** 및 **PNG** 저장 기능으로 **온라인/오프라인 및 서비스 가입 여부에 제한 없이** 어디에서도 사용할 수 있는 환경 구축
+- 교환된 명함을 탭을 닫는 것만으로 사라지게 하지 않고, **명함첩에 저장**하여 보관 및 관리에 편의성
+- React와 Java(Spring Boot) 사이의 **데이터 통신 구조에 대한 학습**
 ### 한계점, 보완 사항
 - 기본적으로 명함 서비스에 필요한 기능에 집중하기 위해 '친구'기능을 통한 타인의 명함 공유 기능을 포기했음에도 React와 Java(Spring Boot)를 처음 사용함에 따라 코드에 오류가 많았고 개발 일정 관리에 실패
 - 입력한 명함 정보의 수정기능, 명함을 공유받은 시간과 메모를 작성하는 기능들 미구현 
