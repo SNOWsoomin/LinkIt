@@ -1,0 +1,96 @@
+.wallet-container {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.wallet-container h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: var(--text-h); /* 루트 변수 적용 */
+  font-family: var(--heading);
+}
+
+.register-card-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.wallet-card.register-form-card {
+  background-color: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: var(--shadow, 0 4px 12px rgba(0,0,0,0.05));
+  width: 100%;
+  max-width: 600px;
+  transition: transform 0.2s;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.form-label {
+  flex: 0 0 120px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text);
+  font-family: var(--sans);
+}
+
+.form-row input {
+  flex: 1;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: var(--sans);
+  color: var(--text);
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.form-row input:focus {
+  border-color: var(--accent-border);
+  background-color: var(--accent-bg); /* 살짝 푸른빛 도는 배경 */
+  box-shadow: 0 0 0 3px rgba(108, 194, 233, 0.2); /* 은은한 글로우 효과 */
+}
+
+.register-submit-btn {
+  width: 100%;
+  padding: 15px;
+  margin-top: 20px;
+  background-color: var(--accent);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-family: var(--heading);
+  font-weight: bold;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.1s;
+}
+
+.register-submit-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.register-submit-btn:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 480px) {
+  .form-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .form-label {
+    margin-bottom: 8px;
+    flex: 0 0 auto;
+  }
+}

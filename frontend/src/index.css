@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-6SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-display: swap;
+}
+
+:root {
+  --sans: 'Paperozi', system-ui, sans-serif;
+  --heading: 'Paperozi', system-ui, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+  
+  --text: #4b4b4b;
+  --text-h: #000000;
+  --bg: #ffffff;
+  --border: #eeeeee;
+  --code-bg: #f8f9fa;
+  
+  --accent: #6CC2E9;
+  --accent-bg: #f0f9ff;
+  --accent-border: #87CEFA;
+
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.18px;
+  color: var(--text);
+  background: var(--bg);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: var(--sans);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg);
+}
+
+#root {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  text-align: center;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading);
+  font-weight: 600;
+  color: var(--text-h);
+}
+
+h1 {
+  font-size: 56px;
+  letter-spacing: -1.68px;
+  margin: 32px 0;
+}
+
+@media (max-width: 1024px) {
+  h1 { font-size: 36px; margin: 20px 0; }
+  :root { font-size: 16px; }
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 118%;
+  letter-spacing: -0.24px;
+  margin: 0 0 8px;
+}
+
+p { margin: 0; }
+
+button, input, select, textarea {
+  font-family: var(--sans);
+  font-size: inherit;
+  color: inherit;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+code, .counter {
+  font-family: var(--mono) !important;
+  border-radius: 4px;
+  background: var(--code-bg);
+}
