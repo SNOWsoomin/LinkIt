@@ -60,7 +60,7 @@
 ![image](https://blog.kakaocdn.net/dna/m9P1Y/dJMcajaFWoW/AAAAAAAAAAAAAAAAAAAAACbpbBLpPjwcJTktIpTTJh-1pLbVXgcnPxhF9uwbdRdu/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1777561199&allow_ip=&allow_referer=&signature=CzF5qVti3%2FiJbVeikwzcMniaSA8%3D)
 4. 완료 버튼 클릭
 5. '마이 페이지' 에서 '내 명함' 에 들어가 제작한 명함 확인  
-![image](https://blog.kakaocdn.net/dna/da4N4x/dJMcafF90Y3/AAAAAAAAAAAAAAAAAAAAAIZRUcoRRHsWLi9SxIpMUYIA_QEbpOFlc4VX63OrQNas/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1777561199&allow_ip=&allow_referer=&signature=92UemxSp5iEntOZXVbd6dBcAVpU%3D)
+![image](https://blog.kakaocdn.net/dna/da4N4x/dJMcafF90Y3/AAAAAAAAAAAAAAAAAAAAAIZRUcoRRHsWLi9SxIpMUYIA_QEbpOFlc4VX63OrQNas/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1777561199&allow_ip=&allow_referer=&signature=92UemxSp5iEntOZXVbd6dBcAVpU%3D)  
 *해당 서비스를 이용하지 않는 사람에게도 명함을 줄 수 있게, PNG로 다운로드받는 버튼을 만들어 해당 버튼의 작동도 확인한다.*
 
 ## 3-3. 명함 교환
@@ -88,8 +88,6 @@
   [API 설계 Notion](https://www.notion.so/API-325ecae04594800db824fac71cdcb622?source=copy_link)
 - ✓ 개발 환경 구축
 - ✓ 사용자, 명함, 교환 이력 등 ERD 설계
-
-  <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbYq3WA%2FdJMcac3p7vQ%2FAAAAAAAAAAAAAAAAAAAAAJQ7EeQhxJc62Y5MhNejz2EBshdhTc0KJoEqihhiMW1v%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1774969199%26allow_ip%3D%26allow_referer%3D%26signature%3DhtOHYOwid2yZfqZykyhG8AxJuJw%253D">
 
 **참고자료**  
 [[MariaDB] MariaDB 설치 및 DBeaver 연동](https://developlsb2dwb.tistory.com/26)  
